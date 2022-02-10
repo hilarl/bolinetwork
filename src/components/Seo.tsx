@@ -5,12 +5,12 @@ import { openGraph } from '@/lib/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'Boli Network',
+  siteName: 'Boli Network',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+    'Boli is a decentralized economy that allows entrepreneurs, creators and organizations to launch their business in the blockchain within minutes — no technical knowledge required. It comes with its own Blockchain, lets you create custom Digital Assets and Tokens.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://boli.network',
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */

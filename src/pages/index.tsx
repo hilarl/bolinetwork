@@ -6,6 +6,7 @@ import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
+import Image from 'next/image'
 
 /**
  * SVGR Support
@@ -27,47 +28,119 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='bg-white'>
+        <section className='bg-gray-800'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-            <Vercel className='text-5xl' />
-            <h1 className='mt-4'>
-              Next.js + Tailwind CSS + TypeScript Starter
+            <Image
+              src="/images/logo.svg"
+              alt="Picture of the author"
+              width={60}
+              height={80}
+            />
+            <h1 className='mt-12 text-cyan-400 text-3xl md:text-6xl mb-6'>
+              An unbiased digital economy.
             </h1>
-            <p className='mt-2 text-sm text-gray-800'>
-              A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-              Import, Seo, Link component, pre-configured with Husky{' '}
+            <p className='mt-2 text-md text-white text-lg md:text-2xl'>
+              Boli is a decentralized economy that allows entrepreneurs, creators and organizations to launch their business in the blockchain within minutes — no technical knowledge required. It comes with its own Blockchain, lets you create custom Digital Assets and Tokens.
             </p>
-            <p className='mt-2 text-sm text-gray-700'>
-              <ArrowLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-                See the repository
-              </ArrowLink>
-            </p>
-
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-
-            <UnstyledLink
-              href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
-              className='mt-4'
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                width='92'
-                height='32'
-                src='https://vercel.com/button'
-                alt='Deploy with Vercel'
-              />
-            </UnstyledLink>
-
-            <footer className='absolute bottom-2 text-gray-700'>
-              © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
-                Theodorus Clarence
-              </UnderlineLink>
-            </footer>
           </div>
         </section>
+        <section className="p-6 md:p-0 mt-10 md:mt-20 container mx-lg mx-auto layout flex min-h-screen flex-col items-center justify-center">
+          <div className="md:flex">
+            <div className="flex-initial mr-20">
+              <Image
+                src="/images/orgs.jpg"
+                alt="Picture of the author"
+                width={400}
+                height={600}
+              />
+            </div>
+            <div className="flex-initial">
+              <h1 className="text-blue-600 text-3xl mt-10 md:mt-0 md:text-6xl">Decentralized Organizations.</h1>
+              <p className="text-xl md:text-2xl mt-2 text-blue-600">Launch your business in the blockchain within minutes. </p>
+              <ul className="text-md md:text-2xl mt-6 md:mt-12">
+                <li>Interoperable and Autonomous Blockchains</li>
+                <li>Decentralized Network Governance</li>
+                <li>Self-Sovereign Identities</li>
+                <li>Branded Tokens</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="p-6 md:p-0 container  mx-lg layout flex md:min-h-screen flex-col items-center justify-center">
+          <div className="md:flex md:flex-row-reverse">
+            <div className="flex-initial ml-20 items-center">
+              <Image
+                src="/images/nft.jpg"
+                alt="Picture of the author"
+                width={800}
+                height={600}
+              />
+            </div>
+            <div className="flex-initial">
+              <h1 className="text-purple-600 text-3xl mt-10 md:mt-0 md:text-6xl">Digital Assets.</h1>
+              <p className="text-xl md:text-2xl mt-2 text-purple-600">Tokenize real-world assets. </p>
+              <ul className="text-md md:text-2xl mt-6 md:mt-12">
+                <li>Commissioned Digital Assets</li>
+                <li>Proof of Ownership</li>
+                <li>Fractional Ownership</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="p-6 md:p-0 container mx-lg layout flex md:min-h-screen flex-col items-center justify-center">
+          <div className="md:flex">
+            <div className="flex-initial mr-12">
+              <Image
+                src="/images/contract.jpg"
+                alt="Picture of the author"
+                width={900}
+                height={600}
+              />
+            </div>
+            <div className="flex-initial">
+              <h1 className="text-orange-400 text-3xl mt-10 md:mt-0 md:text-6xl">Smart Contracts.</h1>
+              <p className="text-xl md:text-2xl mt-2 text-orange-400">Create transactions in blockchains. </p>
+              <ul className="text-md md:text-2xl mt-6 md:mt-12">
+                <li>Self Executing Contracts</li>
+                <li>Crowdfunding</li>
+                <li>Carbon Bonds</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="container bg-gray-800 p-12 pb-24 pt-24 md:p-32 mt-16 md:mt-12">
+          <div className="md:flex">
+            <div className="flex-initial">
+              <h3 className="text-cyan-400 mb-4">Boli Network’s Native Token is</h3>
+              <h1 className="text-4xl md:text-6xl text-white mb-4">KOKAA’ Boli</h1>
+              <p className="text-md md:text-lg md:mr-32 text-white">Boli Network is powered by its native KOKAA’  Boli cryptocurrency. KOKAA tokens are used to pay transaction fees, enable our users to receive rewards through staking, and let them vote on proposals for the development of the ecosystem, with their staked KOKAA tokens.</p>
+            </div>
+            <div className="flex-initial p-20 md:p-0">
+              <Image
+                src="/images/kokaa.png"
+                alt="Picture of the author"
+                width={665}
+                height={690}
+              />
+            </div>
+          </div>
+          <div className="md:flex md:mt-24">
+            <div className="flex-initial mb-14 md:mb-0">
+              <h1 className="mb-3 text-white text-2xl">Boli Hub</h1>
+              <p className="text-white">Boli Hub is the main Blockchain that powers the Boli ecosystem. Secondary Blockchains within the ecosystem connects to Boli Hub and it acts as the intermediary between these Blockchains.</p>
+            </div>
+            <div className="flex-initial">
+              <h1 className="mb-3 text-white text-2xl">Boli Nodes</h1>
+              <p className="text-white">Boli Nodes are indepedent Blockchains within the Boli Network. Boli Nodes form Communities and other independent networks within the ecosystem.</p>
+            </div>
+          </div>
+        </section>
+        <div className="text-center bg-gray-900">
+          <footer className='text-white text-center p-10'>
+            © {new Date().getFullYear()} {' '}
+            Boli Association
+          </footer>
+        </div>
       </main>
     </Layout>
   );
